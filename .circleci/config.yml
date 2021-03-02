@@ -66,7 +66,7 @@ jobs:
       - store_artifacts:
           path: mochawesome-report
       - persist_to_workspace:
-          root: mochawesome-report
+          root: .
           paths:
             - test1.json
             - test1.html
@@ -94,7 +94,7 @@ jobs:
       - store_artifacts:
           path: mochawesome-report
       - persist_to_workspace:
-          root: mochawesome-report
+          root: .
           paths:
             - test2.json
             - test2.html
@@ -122,7 +122,7 @@ jobs:
       - store_artifacts:
           path: mochawesome-report
       - persist_to_workspace:
-          root: mochawesome-report
+          root: .
           paths:
             - test3.json
             - test3.html
@@ -150,7 +150,7 @@ jobs:
       - store_artifacts:
           path: mochawesome-report
       - persist_to_workspace:
-          root: mochawesome-report
+          root: .
           paths:
             - test4.json
             - test4.html
