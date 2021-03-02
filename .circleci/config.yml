@@ -68,8 +68,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - test1.json
-            - test1.html
+              - .
   test2:
     working_directory: ~/tmp
     docker:
@@ -96,8 +95,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - test2.json
-            - test2.html
+              - .
   test3:
     working_directory: ~/tmp
     docker:
@@ -124,8 +122,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - test3.json
-            - test3.html
+              - .
   test4:
     working_directory: ~/tmp
     docker:
@@ -152,8 +149,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - test4.json
-            - test4.html
+              - .
 workflows:
   version: 2
   build_and_test:
